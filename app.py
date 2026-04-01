@@ -55,13 +55,12 @@ if st.button("🔍 Predict Income"):
 
     # Predict
     result = model.predict(input_scaled)
-    prob = model.predict_proba(input_scaled)[0][1]
 
-    # Output
     if result[0] == 1:
-        st.success(f"✅ High Income (>50K)\nProbability: {prob:.2f}")
+        st.success("✅ High Income (>50K)")
     else:
-        st.warning(f"⚠️ Low Income (<=50K)\nProbability: {prob:.2f}")
+       st.warning("⚠️ Low Income (<=50K)")
+
 
 # Footer
 st.markdown("---")
