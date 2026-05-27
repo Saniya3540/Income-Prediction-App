@@ -8,10 +8,11 @@ https://income-prediction-app-n2nihzatkjthmkwwtbdatf.streamlit.app
 ## Features
 - Data preprocessing
 - Missing value handling
-- Outlier treatment
 - One Hot Encoding
 - Feature Scaling
 - Model training and evaluation
+- Hyperparameter tuning using GridSearchCV
+- K-Fold Cross Validation
 - Streamlit deployment
 
 ## Technologies Used
@@ -25,13 +26,17 @@ https://income-prediction-app-n2nihzatkjthmkwwtbdatf.streamlit.app
 
 ## Machine Learning Algorithms
 - KNN Classifier
-- Decision Tree
-- Random Forest
+- Decision Tree Classifier
+- Random Forest Classifier
 
 ## Model Performance
-- KNN Accuracy: 81%
-- Random Forest Accuracy: 81%
-- Decision Tree Accuracy: 78%
+- KNN Classifier Accuracy: 81.85%
+- Random Forest Accuracy: 81.42%
+- Decision Tree Accuracy: 78.33%
+- Precision Score: 63.38%
+- Recall Score: 58.29%
+- K-Fold Cross Validation Accuracy: 81.59%
+- Best Performing Model: KNN Classifier
 
 ## Project Files
 - app.py
@@ -44,9 +49,10 @@ https://income-prediction-app-n2nihzatkjthmkwwtbdatf.streamlit.app
 ## Project Workflow
 1. Data Cleaning
 2. Missing Value Handling
-3. Outlier Treatment
-4. Encoding
-5. Feature Scaling
+3. Encoding
+4. Feature Scaling
+5. Train-Test Split
 6. Model Training
-7. Model Evaluation
-8. Deployment using Streamlit
+7. Hyperparameter Tuning
+8. Model Evaluation
+9. Deployment using Streamlit
